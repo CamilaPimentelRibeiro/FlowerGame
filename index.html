@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 3 Animation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script1.js" defer></script>
+        <style>
+            canvas{
+                width: 100%;
+                height: 100%;
+                position:absolute;
+                margin: 0;
+            }
+            body{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                background-color: #fdf4f4;
+            }
+
+            h3{
+                display: block;
+                color:#E3E5D9;
+                position: absolute;
+                text-align: left;
+                margin: auto;
+                bottom: 50px;
+                left: 0;
+                margin-left: 490px; 
+                z-index: 9999;
+                font-weight: 500;
+                font-size: 150px;
+            }
+
+            h1{
+                color: #E89EB9;
+                position: absolute;
+                text-align: left;
+                margin: auto;
+                left: 0;
+                padding-top: 40px;
+                margin-left: 40px; 
+                font-weight: 500;
+                font-size: 40px;
+                pointer-events: none;
+            }
+            p{
+                color: #E89EB9;
+                position: absolute;
+                text-align: left;
+                padding-top: 80px;
+                margin-left: 29px;
+                font-size: 20px;
+                pointer-events: none;
+            }
+
+            h2{
+                position: absolute;
+                text-align: left;
+                display: block;
+                margin: auto;
+                color: #E89EB9;
+                bottom: 20px;
+                left: 0;
+                right: 0;
+                margin-left: 450px; 
+                z-index: 9999;
+                font-weight: 500
+            }
+
+            h2:hover {
+                color: #BF5C80 ;
+            }
+
+            #girl, #girl2{
+                position: absolute;
+                text-align: center;
+                font-weight: 100;
+                display: block;
+                margin: auto;
+                bottom: 0; 
+                left: 0;
+                right: 0;
+                margin-left: 210px; 
+                z-index: 9999;
+                pointer-events: none;
+            }
+
+            #house {
+                position: absolute;
+                text-align: center;
+                font-weight: 100;
+                display: block;
+                margin: auto;
+                bottom: 0; 
+                left:-20px;
+                right: 0;
+                bottom: -10px;
+                margin-left: 0px;
+                pointer-events: none;
+            }
+            
+            #fairy1{
+                position: absolute;
+                right:90px;
+                top: 100px;
+                pointer-events: none;
+            }
+            #fairy2{
+                position: absolute;
+                top: 60px;
+                right: 400px;
+                z-index: 9999;
+                pointer-events: none;
+            }
+            #flowers{
+                position: absolute;
+                top: -60px;
+                right:-40px;
+                z-index: 999;
+                border: none;
+                padding: 12px 20px;
+                pointer-events: none;
+            }
+            @media only screen and (max-width: 768px) {
+                h1 {
+                    padding-top: 190px;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%
+                }
+
+                p{
+                    padding-top: 220px;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%
+                }
+                #house{
+                    display: none;
+                }
+
+                #girl, #girl2{
+                margin-left: 20px; 
+                z-index: 9999;
+                pointer-events: none;
+                }
+
+                h2{
+                margin-left: 250px;
+                font-size: 20px;
+                }
+                h3{
+                margin-left: 300px; 
+                }
+
+                h2, h3, h1, p{
+                    pointer-events: none;
+                }
+           }
+
+        </style>
+    </head>
+
+    <body>
+        <canvas id="demoCanvas" width="1024" height="768"></canvas>
+       
+        <div class="container">
+            <div>
+                <h1 id="h1">Agatha's Garden </h1>
+                <p>In this project, I've leveraged my graphic design skills<br>to create a game using CSS, HTML, and JavaScript.</p>
+                <h3 id="h3">0</h3>
+                <h2 id="text">Move your mouse over the little<br>flowers to turn them green</h2>
+            </div>
+            <div>
+                <img id="flowers" src="images/Agatha29.png" width="460" height="316">
+                <img id="fairy2" src="images/Agatha23.png" width="97" height="115">
+                <img id="fairy1" src="images/Agatha22.png" width="97" height="115">
+            </div>
+            <div>
+                <img id="house" src="images/Agatha67.png" width="308" height="270">
+                <img id="girl2" src="images/Asset11.png" width="264" height="474">
+                <img id="girl" src="images/Agatha38.png" width="264" height="474">
+            </div>
+        </div>
+       
+    </body>
+
+</html>
